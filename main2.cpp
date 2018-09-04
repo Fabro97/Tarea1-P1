@@ -2,6 +2,7 @@
  *  Tarea programacion 1 en c/c++
  */
  #include <stdio.h>
+ #include <stdlib.h>
  #include <math.h>
  
 int main(){
@@ -29,7 +30,8 @@ int main(){
           numIngresado /= primo;
           multiplicidad++;
         }
-        printf("%d^%d\n",primo,multiplicidad);
+        if(multiplicidad > 0)
+          printf("%d^%d\n",primo,multiplicidad);
         if(numIngresado > 1){
           do{
             primo++;
@@ -47,5 +49,6 @@ int main(){
       }
     }
   }
+  system("pause");
   return 0;
 }
